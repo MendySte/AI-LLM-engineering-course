@@ -10,7 +10,7 @@ The project currently includes a basic Python script that sends a chat completio
 
 ## Project Structure
 
-- `hello_llm.py` - Sends a simple prompt to an OpenAI model.
+- `hello_llm.py` - Sends a simple prompt to a Claude model through Anthropic's OpenAI-compatible API.
 - `requirements.txt` - Lists the Python dependencies.
 - `.env.example` - Shows the required environment variables.
 - `.gitignore` - Excludes local, generated, and sensitive files from Git.
@@ -18,7 +18,7 @@ The project currently includes a basic Python script that sends a chat completio
 ## Requirements
 
 - Python 3.12 or newer
-- An OpenAI API key
+- An Anthropic API key
 
 ## Setup
 
@@ -50,7 +50,7 @@ python -m pip install -r requirements.txt
 Set the OpenAI API key for the current PowerShell session:
 
 ```powershell
-$env:OPENAI_API_KEY = "your-api-key"
+$env:ANTHROPIC_API_KEY = "sk-ant-your-api-key"
 ```
 
 Run the application:
@@ -73,3 +73,4 @@ python hello_llm.py
 API keys, virtual environments, and local configuration files must never be committed to the repository.
 
 Use `.env.example` only as a configuration template. Never add a real API key to this file.
+
