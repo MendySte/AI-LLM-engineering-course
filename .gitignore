@@ -1,7 +1,35 @@
 ﻿.venv/
 __pycache__/
 *.py[cod]
+
 .env
+.env.*
+
 .vscode/
 .idea/
 .DS_Store
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+models/*
+!models/.gitkeep
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Temporary / generated data
+data/processed/*
+!data/processed/.gitkeep
+
+# Model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
